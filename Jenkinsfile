@@ -21,7 +21,7 @@ pipeline {
 
                     // Extract numeric part and increment
                     def versionNumber = latestTag.replaceAll("[^0-9]", "").toInteger()
-                    def nextVersion = "v${versionNumber}"
+                    def nextVersion = "v${versionNumber + 1}"
                     env.NEXT_VERSION = nextVersion
 
                     // Check if Dockerfile exists, if not, create this simple one
