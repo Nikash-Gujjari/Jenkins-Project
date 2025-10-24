@@ -13,6 +13,8 @@ pipeline {
                     // SCM 
                     checkout scm
 
+                    sh 'git tag | xargs git tag -d'
+                    
                     // Fetch all tags
                     sh 'git fetch --tags'
 
