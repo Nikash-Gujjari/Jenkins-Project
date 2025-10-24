@@ -10,5 +10,5 @@ class BankAccount:
     def overdrawn(self):
         return self.balance < 0
 my_account = BankAccount(15)
-my_account.withdraw(70)
+my_account.withdraw(80)
 print (my_account.balance, my_account.overdrawn())
