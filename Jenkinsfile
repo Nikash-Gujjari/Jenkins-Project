@@ -56,7 +56,7 @@ pipeline {
             steps {
                 script{
                     // Tag image for Docker Hub
-                    def dockerHubRepo = 'your-dockerhub-username/nikash-gujjari-python-app'
+                    def dockerHubRepo = 'ngujjari707/nikash-gujjari-python-app'
                     sh "docker tag ${env.DOCKER_IMAGE}:${env.NEXT_VERSION} ${dockerHubRepo}:${env.NEXT_VERSION}"
 
                     // Push to Docker Hub
